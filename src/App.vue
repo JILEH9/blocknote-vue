@@ -80,9 +80,10 @@
 
   const blockNoteViewRef = ref<Exposed | null>(null);
 
-  const handleChange = (markdown: string, document: any) => {
+  const handleChange = (document: any, changes: any, markdown: string) => {
     console.log("Markdown content:", markdown);
     console.log("Document content:", document);
+    console.log("Changes:", changes);
   }
 
   const handleUpdate = () => {

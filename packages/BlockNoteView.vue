@@ -17,7 +17,7 @@
 
   // expose types: https://github.com/vuejs/core/issues/10873
   export interface Exposed {
-    editor: ShallowRef<BlockNoteEditor | null>
+    editor: BlockNoteEditor | null
   }
 
   export default defineComponent({
