@@ -1,4 +1,4 @@
-# blocknote-vue
+# blocknote-vue это форк https://github.com/damengshu/blocknote-vue но с переделаным языком ru
 # **[BlockNote](https://www.blocknotejs.org/docs#introduction-to-blocknote)** в Vue 3
 
 #### use [veaury](https://github.com/gloriasoft/veaury/) support react component in vue3
