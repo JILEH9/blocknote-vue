@@ -6,7 +6,7 @@
   import { createRoot } from 'react-dom/client'
   import { BlockNoteView } from "@blocknote/mantine"
   import { defineComponent, onBeforeUnmount, onMounted, shallowRef, type ShallowRef } from 'vue'
-  import { zh } from "@blocknote/core/locales";
+  import { ru } from "@blocknote/core/locales";
   import { type BlockNoteEditorOption } from "./props";
 
   setVeauryOptions({
@@ -43,7 +43,7 @@
 
       onMounted(() => {
         editor.value = BlockNoteEditor.create({
-          dictionary: zh,
+          dictionary: ru,
           ...props.editorProps,
           uploadFile: props.uploadFile
         }) as BlockNoteEditor

@@ -47,28 +47,28 @@ export default defineConfig({
           globals: {
             vue: 'Vue',
           },
-          // 打包格式
+          // Формат сборки
           format: 'es',
-          // 打包后文件名
+          // Имя выходного файла
           entryFileNames: '[name].mjs',
-          // 让打包目录和我们目录对应
+          // Сохранять структуру каталогов при сборке
           preserveModules: true,
           exports: 'auto',
-          // 配置打包根目录
+          // Корневая директория выходной сборки
           dir: './dist/es'
         },
         {
           globals: {
             vue: 'Vue',
           },
-          // 打包格式
+          // Формат сборки
           format: 'cjs',
-          // 打包后文件名
+          // Имя выходного файла
           entryFileNames: '[name].js',
-          // 让打包目录和我们目录对应
+          // Сохранять структуру каталогов при сборке
           preserveModules: true,
           exports: 'auto',
-          // 配置打包根目录
+          // Корневая директория выходной сборки
           dir: './dist/lib'
         }
       ]

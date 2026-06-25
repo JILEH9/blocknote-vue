@@ -66,14 +66,14 @@ export function copyPackageJsonPlugin(): Plugin {
           homepage: packageJson.homepage,
         }
 
-        // 将 distPackageJson 写入 dist 目录
+        // Записать distPackageJson в каталог dist
         writeFileSync(join(__dirname, '../dist', 'package.json'), JSON.stringify(distPackageJson, null, 2))
         console.log('package.json copied and modified successfully!')
 
-        // 如果需要，可以复制 README.md 等其他文件到 dist 目录
+        // При необходимости копировать README.md и другие файлы в dist
         copyFileSync(join(__dirname, '../README.md'), join(__dirname, '../dist', 'README.md'))
 
-        // 复制 blocknote-vue.d.ts 到 dist/types/
+        // Копировать blocknote-vue.d.ts в dist/types/
         const src = join(__dirname, '../types/blocknote-vue.d.ts')
         const destDir = join(__dirname, '../dist/types')
         const dest = join(destDir, 'blocknote-vue.d.ts')

@@ -88,7 +88,7 @@
   const handleUpdate = () => {
     const editor = blockNoteViewRef.value?.editor;
     if (!editor) {
-      console.warn("Editor 未初始化");
+      console.warn("Редактор не инициализирован");
       return;
     }
 
